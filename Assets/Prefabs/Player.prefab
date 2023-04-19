@@ -207,13 +207,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.98
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.87, z: 0}
 --- !u!114 &8374343181040062199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpStrength: 2
+  gravity: -9.81
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
   groundCheck: {fileID: 2259405159957555260}
 --- !u!1 &874595144398154344
 GameObject:
@@ -334,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc019585b16483c95cf281e1ea5c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 2
+  sensitivity: 1234
   smoothing: 1.5
   character: {fileID: 874595143701292299}
 --- !u!1 &2975733948658335752
@@ -363,14 +366,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2975733948658335752}
-  m_LocalRotation: {x: -0.10629184, y: 0.000677009, z: -0.024267774, w: 0.9940386}
-  m_LocalPosition: {x: 0.266, y: -0.23500001, z: 0.049}
+  m_LocalRotation: {x: -0.109240845, y: -0.036120106, z: -0.05254239, w: 0.99196833}
+  m_LocalPosition: {x: 0.495, y: -0.08, z: 0.15}
   m_LocalScale: {x: 0.17799, y: 0.17798999, z: 0.17798997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 874595144398154351}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -12.198, y: 0.381, z: -2.838}
+  m_LocalEulerAnglesHint: {x: -12.74, y: -3.537, z: -5.669}
 --- !u!33 &2335366811805331000
 MeshFilter:
   m_ObjectHideFlags: 0

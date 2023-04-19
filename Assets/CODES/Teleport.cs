@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleportt : MonoBehaviour
+public class Teleport : MonoBehaviour
 {
 
     public GameObject Destination;
