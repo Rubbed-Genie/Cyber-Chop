@@ -10,6 +10,13 @@ Screenshots
 
 
 
-Hand Used 
+Assets Used: 
 
+Font
+https://www.dafont.com/pixel-lcd7.font
+
+Hand
 [![Low Poly Hand](https://sketchfab.com/models/50c33884505b403e9498f1e6920a4575/embed)](https://sketchfab.com/3d-models/low-poly-hand-50c33884505b403e9498f1e6920a4575?utm_medium=embed&utm_campaign=share-popup&utm_content=50c33884505b403e9498f1e6920a4575)
+
+Shadder
+https://github.com/keijiro/KinoGlitch
