@@ -7,6 +7,7 @@ public class Legs : MonoBehaviour
     public float speed = 5f;
     public bool canRun = true;
     public float runSpeed = 9f;
+    public float ClickSpeed = 7f;
     public KeyCode runningKey = KeyCode.LeftShift;
 
     private Transform playerTransform;
@@ -34,8 +35,16 @@ public class Legs : MonoBehaviour
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
         }
 
-        Vector3 targetVelocity = playerTransform.right * Input.GetAxis("Horizontal") + playerTransform.forward * Input.GetAxis("Vertical");
-        targetVelocity = targetVelocity.normalized * targetMovingSpeed;
+        Vector3 targetVelocity = Vector3.zero;
+        if (Input.GetButton("Fire2"))
+        {
+            targetVelocity = playerTransform.forward * ClickSpeed;
+        }
+        else
+        {
+            targetVelocity = playerTransform.right * Input.GetAxis("Horizontal") + playerTransform.forward * Input.GetAxis("Vertical");
+            targetVelocity = targetVelocity.normalized * targetMovingSpeed;
+        }
 
         characterController.SimpleMove(targetVelocity);
     }
