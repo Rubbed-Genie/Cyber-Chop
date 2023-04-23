@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public CharacterController controller;
     public bool isColliding = false;
     public GameObject Head;
+    public EnemySystem enemySystem; 
 
     private void OnTriggerStay(Collider other)
     {
@@ -29,6 +30,7 @@ public class Enemy : MonoBehaviour
         else if (other.CompareTag(destroyTag))
         {
             // If the enemy collides with an object with the specified tag, destroy itself
+            enemySystem.EnemyDefeated();
             Destroy(Head);
             Debug.Log("Enemy destroyed by object with tag " + destroyTag);
         }
