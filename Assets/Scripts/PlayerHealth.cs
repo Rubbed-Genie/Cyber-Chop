@@ -7,7 +7,7 @@ using Colorful;
 public class PlayerHealth : MonoBehaviour
     {
       public delegate void HealthChangedDelegate(int currentHealth, int maxHealth);
-       public event HealthChangedDelegate OnHealthChanged;  // event that is fired when the health changes
+      public event HealthChangedDelegate OnHealthChanged;  // event that is fired when the health changes
       public DigitalGlitch GlitchEffect;
       public AnalogGlitch GlitchEffect2;
       public Glitch.TearingSettings GlitchEffect3;
