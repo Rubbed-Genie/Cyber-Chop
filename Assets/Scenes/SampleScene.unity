@@ -3201,7 +3201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d22f29bf42644fc857d1d96ecff889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 666
   countdownText: {fileID: 1832810924}
 --- !u!1 &1876292199
 GameObject:
