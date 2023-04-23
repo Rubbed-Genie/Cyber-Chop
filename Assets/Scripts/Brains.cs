@@ -29,7 +29,11 @@ public class Brains : MonoBehaviour
             {
                 canSeeTarget = false;
             }
+            Debug.DrawRay(transform.position, target.position - transform.position, canSeeTarget ? Color.green : Color.red);
         }
+
+        Debug.Log("Target position: " + target.position);
+        Debug.Log("Can see target: " + canSeeTarget);
 
         // If the target is within range and visible, move towards it
         if (canSeeTarget && distance > stoppingDistance)

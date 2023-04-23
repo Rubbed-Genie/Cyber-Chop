@@ -8,9 +8,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] private PlayerHealth playerHealth;
     public CharacterController controller;
     public bool isColliding = false;
+    public GameObject Head;
 
     private void OnTriggerStay(Collider other)
     {
+        
         if (other.gameObject == controller.gameObject)
         {
             isColliding = true;
@@ -27,7 +29,7 @@ public class Enemy : MonoBehaviour
         else if (other.CompareTag(destroyTag))
         {
             // If the enemy collides with an object with the specified tag, destroy itself
-            Destroy(gameObject);
+            Destroy(Head);
             Debug.Log("Enemy destroyed by object with tag " + destroyTag);
         }
     }
