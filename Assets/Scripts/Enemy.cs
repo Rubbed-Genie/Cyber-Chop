@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
         {
             // If the enemy collides with an object with the specified tag, destroy itself
             enemySystem.EnemyDefeated();
-            Destroy(Head);
+            Head.SetActive(false);
             Debug.Log("Enemy destroyed by object with tag " + destroyTag);
         }
     }
